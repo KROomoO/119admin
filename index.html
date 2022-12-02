@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+            * {
+                font-family: "Noto Sans KR";
+                font-weight: 900;
+            }
+        </style>
+        <link rel="stylesheet" href="./css/FO_AD.css" />
+        <script src="./jquery/jquery-3.6.1.min.js"></script>
+        <title>소방119_admin</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar_logo">
+                <a href="index.html">
+                    <img src="./images/admin_main/logo.png" alt="main_logo" />
+                </a>
+            </div>
+            <div class="navbar_title">
+                <h3>소방119소방시설물관리관리자시스템</h3>
+            </div>
+            <div class="navbar_content">
+                <div class="navbar_login">
+                    <strong id="db_이름">홍길동</strong>
+                    <p>님이</p>
+                    <p>&nbsp;로그인</p>
+                    <p>&nbsp;하셨습니다.</p>
+                    <button>로그아웃</button>
+                </div>
+                <div class="navbar_menu">
+                    <button>대시보드</button>
+                    <button id="bld_btn">시설물</button>
+                    <button id="manage_btn">사용자관리</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="map"></div>
+            <div class="map_controller">
+                <img src="./images/admin_main/icon_01.png" alt="myLocation" />
+                <img src="./images/admin_main/icon_02.png" alt="zoomIn" />
+                <img src="./images/admin_main/icon_03.png" alt="zoomOut" />
+                <img src="./images/admin_main/icon_04.png" alt="roadview" />
+            </div>
+            <!-- sample_bld_btn -->
+            <button
+                style="
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    z-index: 1;
+                    top: 50%;
+                    left: 10%;
+                    background-color: orange;
+                "
+                id="sample_bld_btn"
+            >
+                sample_bld_button
+            </button>
+        </main>
+        <!-- popUp1, blur1 -->
+        <div class="blur" id="blur" style="display: none"></div>
+        <div class="popUp" id="popUp_container" style="display: none"></div>
+        <!-- popUp2, blur2 -->
+        <div class="blur2" id="blur2" style="display: none"></div>
+        <div class="popUp2" id="popUp2_container" style="display: none"></div>
+        <!-- popUp3 -->
+        <div class="popUp3" id="popUp3_container" style="display: none"></div>
+        <!-- bottom -->
+        <div class="bottom"></div>
+        <script src="./js/bottom_ctl.js"></script>
+        <script src="./js/popup_bld_ctn.js"></script>
+        <script src="./js/popUp2_inspection_ctn.js"></script>
+        <script src="./js/popUp3_user_manage_ctn.js"></script>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- create_user -->
+        <div class="popUp_default" id="create_user">
+            <div class="popUp_header border_top">
+                <h3>
+                    <img
+                        src="../images/admin_main/icon_check.png"
+                        alt="icon_check"
+                    />
+                    소방119 시설물 관리
+                </h3>
+                <img
+                    src="../images/admin_main/btn_close_w.png"
+                    alt="btn_close"
+                    id="user_popUp_close_btn"
+                />
+            </div>
+            <div class="popUp_title">
+                <strong>
+                    <img
+                        src="../images/admin_main/icon_circle.png"
+                        alt="icon_circle"
+                    />
+                    사용자 등록
+                </strong>
+            </div>
+            <form action="#" class="user_manage_form">
+                <table class="wrapper_user_form_item">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span>이 름</span>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span> 비 밀 번 호 </span>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span> 비 밀 번 호 확 인 </span>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span> 전 화 번 호 </span>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span> 등 급 </span>
+                            </td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">관리자</option>
+                                    <option value="">영업관리자</option>
+                                    <option value="">일반사용자</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="wrapper_user_bottom_btn">
+                    <button type="submit">저장하기</button>
+                    <button type="reset">초기화</button>
+                </div>
+            </form>
+        </div>
+        <!-- edit_user -->
+        <div class="popUp_default" id="edit_user">
+            <div class="popUp_header border_top">
+                <h3>
+                    <img
+                        src="../images/admin_main/icon_check.png"
+                        alt="icon_check"
+                    />
+                    소방119 시설물 관리
+                </h3>
+                <img
+                    src="../images/admin_main/btn_close_w.png"
+                    alt="btn_close"
+                    id="user_popUp_close_btn"
+                />
+            </div>
+            <div class="popUp_title">
+                <strong>
+                    <img
+                        src="../images/admin_main/icon_circle.png"
+                        alt="icon_circle"
+                    />
+                    사용자 상세 / 수정
+                </strong>
+            </div>
+            <form action="#" class="user_manage_form">
+                <table class="wrapper_user_form_item">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span>이 름</span>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="clear_pwd">
+                                <span> 비 밀 번 호 </span>
+                                <button>
+                                    <img
+                                        src="../images/admin_main/btn_reset_s.png"
+                                        alt="icon_reset"
+                                    />
+                                    비밀번호 초기화
+                                </button>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span> 비 밀 번 호 확 인 </span>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span> 전 화 번 호 </span>
+                            </td>
+                            <td>
+                                <input type="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span> 등 급 </span>
+                            </td>
+                            <td>
+                                <select name="" id="">
+                                    <option value="">관리자</option>
+                                    <option value="">영업관리자</option>
+                                    <option value="">일반사용자</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="wrapper_user_bottom_btn">
+                    <button type="submit">저장하기</button>
+                    <button type="reset">삭제하기</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

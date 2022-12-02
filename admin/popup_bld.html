@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="popUp_default popUp_bg_color" id="popUp_bld_detail">
+            <div class="pop_head_btn">
+                <div class="pop_head_left">
+                    <button id="bld_detail_btn" class="active">
+                        <img
+                            src="../images/admin_main/icon_building.png"
+                            alt="icon_building"
+                        />
+                        건물
+                    </button>
+                    <button id="bld_history_btn">
+                        <img
+                            src="../images/admin_main/icon_list.png"
+                            alt="icon_list"
+                        />
+                        이력
+                    </button>
+                </div>
+                <div class="pop_head_right">
+                    <button id="close_popUp1">
+                        <img
+                            src="../images/admin_main/icon_close.png"
+                            alt="popUp1_close_btn"
+                        />
+                    </button>
+                </div>
+            </div>
+            <div class="popUp_bld_detail_content" id="detail_content_container">
+                <div class="popUp_content" id="popUp_bld1">
+                    <div class="popUp_content_title title_grey">
+                        <div class="blddetail_header">
+                            <img
+                                src="../images/admin_main/icon_circle.png"
+                                alt="icon_circle"
+                            />
+                            <strong>건물 정보</strong>
+                            <button id="bld_photo"></button>
+                        </div>
+                    </div>
+                    <div class="blddetail_table">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>건물명</th>
+                                    <td>
+                                        <span> 고려대 서울캠퍼스 산학관 </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>소재지</th>
+                                    <td>
+                                        <span> 서울 성북구 안암로 73-15 </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>구조</th>
+                                    <td>
+                                        <span> 철근콘크리트식 </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>연면적</th>
+                                    <td>
+                                        <span> 22865.93m2 </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>지하층</th>
+                                    <td>
+                                        <span> 3층 </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>지상층</th>
+                                    <td>
+                                        <span> 7층</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>계약전류용량</th>
+                                    <td>
+                                        <span> 100A </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div
+                        class="popUp_photo"
+                        id="popUp_photo"
+                        style="display: none"
+                    >
+                        <div class="popUp_photo_close">
+                            <button id="popUp_photo_close_btn">
+                                <img
+                                    src="../images/admin_main/btn_close_g.png"
+                                    alt="photo_close_btn"
+                                />
+                            </button>
+                        </div>
+                        <div class="popUp_photo_preview">
+                            <div class="wrapper_photo_preview">
+                                <img
+                                    src=""
+                                    alt="bld_preview"
+                                    id="preview_photo"
+                                />
+                            </div>
+                        </div>
+                        <div class="popUp_photo_list">
+                            <div class="wrapper_photo_list_item">
+                                <img
+                                    src="../images/bld_sample/bld_sample_1.jpg"
+                                    alt=""
+                                    class="photo_list_item"
+                                    id="photo_list_item1"
+                                />
+                                <img
+                                    src="../images/bld_sample/bld_sample_2.jpg"
+                                    alt=""
+                                    class="photo_list_item"
+                                    id="photo_list_item2"
+                                />
+                                <img
+                                    src="../images/bld_sample/bld_sample_3.jpg"
+                                    alt=""
+                                    class="photo_list_item"
+                                    id="photo_list_item3"
+                                />
+                                <img
+                                    src="../images/bld_sample/bld_sample_4.jpg"
+                                    alt=""
+                                    class="photo_list_item"
+                                    id="photo_list_item4"
+                                />
+                                <img
+                                    src="../images/bld_sample/bld_sample_5.jpg"
+                                    alt=""
+                                    class="photo_list_item"
+                                    id="photo_list_item5"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popUp_content" id="popUp_bld2">
+            <div class="popUp_content_title">
+                <div class="list_set">
+                    <h3>
+                        <img
+                            src="../images/admin_main/icon_circle.png"
+                            alt="circle"
+                        />
+                        이력 정보
+                    </h3>
+                    <select name="" id="">
+                        <option value="">10개씩</option>
+                        <option value="">5개씩</option>
+                        <option value="">3개씩</option>
+                    </select>
+                </div>
+            </div>
+            <div class="wrapper_popUp_content_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>점검일</th>
+                            <th>점검자</th>
+                            <th>상세</th>
+                            <th>층정보</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="history_tr">
+                            <td>6</td>
+                            <td>2022.02.12</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>5</td>
+                            <td>2021.05.12</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>4</td>
+                            <td>2021.02.12</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>3</td>
+                            <td>2020.02.28</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>2</td>
+                            <td>2019.02.21</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                        <tr class="history_tr">
+                            <td>1</td>
+                            <td>2018.02.24</td>
+                            <td>OOO</td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_detail_input"
+                                />
+                            </td>
+                            <td class="wrapper_bld_history_input">
+                                <input
+                                    type="checkbox"
+                                    class="history_floor_input"
+                                />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
