@@ -4,11 +4,11 @@ const bottom = $(".bottom");
 
 const bottom_container = {
     bld: {
-        file_name: "../html/bottom_bld.html",
+        file_name: "../view/bottom_bld.html",
         containerId: "#bottom_bld",
     },
     manage: {
-        file_name: "../html/bottom_manage.html",
+        file_name: "../view/bottom_manage.html",
         containerId: "#bottom_manage",
     },
 };

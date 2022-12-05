@@ -1,6 +1,6 @@
 $(document).on("click", "#user_create_btn", () => {
     $("#popUp3_container").load(
-        "../html/popUp3_user_manage.html #create_user"
+        "../view/popUp3_user_manage.html #create_user"
     );
     blur1_toggle();
     $("#popUp3_container").show();
@@ -12,7 +12,7 @@ $(document).on("click", "#user_popUp_close_btn", () => {
 });
 
 $(document).on("click", ".user_manage_input", (e) => {
-    $("#popUp3_container").load("../html/popUp3_user_manage.html #edit_user");
+    $("#popUp3_container").load("../view/popUp3_user_manage.html #edit_user");
     blur1_toggle();
     uncheckuserinput();
     $("#popUp3_container").show();

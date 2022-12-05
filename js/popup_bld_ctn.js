@@ -1,17 +1,17 @@
 $(document).on("click", "#sample_bld_btn", () => {
     blur_popUp_toggle();
-    $("#popUp_container").load("../html/popup_bld.html #popUp_bld_detail");
-    $("#detail_content_container").load("../html/popup_bld.html #popUp_bld1");
+    $("#popUp_container").load("../view/popup_bld.html #popUp_bld_detail");
+    $("#detail_content_container").load("../view/popup_bld.html #popUp_bld1");
     $("#popUp_container").show();
 });
 
 $(document).on("click", "#bld_detail_btn", () => {
-    $("#detail_content_container").load("../html/popup_bld.html #popUp_bld1");
+    $("#detail_content_container").load("../view/popup_bld.html #popUp_bld1");
     toggle_btn_bg($("#bld_detail_btn"), $("#bld_history_btn"));
 });
 
 $(document).on("click", "#bld_history_btn", () => {
-    $("#detail_content_container").load("../html/popup_bld.html #popUp_bld2");
+    $("#detail_content_container").load("../view/popup_bld.html #popUp_bld2");
     $("#bld_photo").hide();
     toggle_btn_bg($("#bld_history_btn"), $("#bld_detail_btn"));
 });
