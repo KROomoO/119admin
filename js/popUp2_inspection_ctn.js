@@ -1,7 +1,7 @@
 $(document).on("click", ".history_detail_input", () => {
     blur2_toggle();
     $("#popUp2_container").load(
-        "../admin/popup2_inspection.html #all_inspection"
+        "../html/popup2_inspection.html #all_inspection"
     );
     uncheckedinput();
 });
@@ -9,7 +9,7 @@ $(document).on("click", ".history_detail_input", () => {
 $(document).on("click", ".history_floor_input", () => {
     blur2_toggle();
     $("#popUp2_container").load(
-        "../admin/popup2_inspection.html #floor_inspection"
+        "../html/popup2_inspection.html #floor_inspection"
     );
     uncheckedinput();
 });
